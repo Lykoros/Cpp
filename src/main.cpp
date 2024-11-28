@@ -17,5 +17,9 @@ int main()
 
     std::cout << "\nTring namespaces" << std::endl;
     nameSpace();
+
+    std::cout << "\nTring structure" << std::endl;
+    structure();
+
     return 0;
   }

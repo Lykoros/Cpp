@@ -14,7 +14,7 @@
 
 void files()
 {
-  std::ifstream file{"/home/lykoro/Documents/cours/C++/files/file.txt"}; // std::ios::in
+  std::ifstream file{"./files/file.txt"}; // std::ios::in
   std::string name{""};
 
   if(file.is_open())
@@ -30,13 +30,13 @@ void files()
   std::cout << name << std::endl;
   file.close();
 
-  std::ofstream temp{"/home/lykoro/Documents/cours/C++/files/temp.txt"};
+  std::ofstream temp{"../files/temp.txt"};
   if(temp.is_open())
   {
     temp << "this is a temporary file\n";
     temp << "I'm pretty sure of that";
     temp.close();
-    std::ifstream file{"/home/lykoro/Documents/cours/C++/files/temp.txt"};
+    std::ifstream file{"../files/temp.txt"};
     
     std::cout << "content of the temporary file : " << std::endl; 
 
@@ -48,5 +48,5 @@ void files()
     file.close();
   }
 
-  remove("files/temp.txt");
+  remove("../files/temp.txt");
 }

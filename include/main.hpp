@@ -9,4 +9,5 @@
   void enumeration();
   void files();
   void nameSpace();
+  void structure();
 #endif // !__UTILS__
