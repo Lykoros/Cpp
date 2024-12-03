@@ -21,5 +21,8 @@ int main()
     std::cout << "\nTring structure" << std::endl;
     structure();
 
+    std::cout << "\nTring object" << std::endl;
+    object();
+
     return 0;
   }

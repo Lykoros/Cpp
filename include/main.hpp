@@ -10,4 +10,5 @@
   void files();
   void nameSpace();
   void structure();
+  void object();
 #endif // !__UTILS__

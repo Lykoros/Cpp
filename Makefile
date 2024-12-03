@@ -4,11 +4,11 @@ allNix: finalNix clean
 
 all: final clean
 
-finalNix: main.o utils.o enum.o error.o files.o namespace.o structure.o
+finalNix: main.o utils.o enum.o error.o files.o namespace.o structure.o object.o
 	@echo "linking all temporary files"
 	@$(++) *.o -o cppProg 
 
-final: main.o utils.o enum.o error.o files.o namespace.o structure.o
+final: main.o utils.o enum.o error.o files.o namespace.o structure.o object.o
 	@echo "linking all temporary files"
 	@$(++) *.o -o ./bin/final 
 
@@ -39,6 +39,10 @@ namespace.o: ./src/namespace.cpp
 structure.o: ./src/structure.cpp
 	@echo "compiling structure file"
 	@$(++) -c ./src/structure.cpp
+
+object.o: ./src/object.cpp
+	@echo "compiling object file"
+	@$(++) -c ./src/object.cpp
 
 clean:
 	@echo "deleting temporary files"
