@@ -35,9 +35,9 @@ Point::Point()
   std::cout << "Creating a Point : " << this << std::endl; //this stand for current instance (&px) the address of the current object
 }
 
-Point::Point(const Point &p)
+Point::Point(const Point& p)
 {
-  std::cout << "Copying a point : " << this << std::endl; //this stand for current instance (&px) the address of the current object
+  std::cout << "Copying a point : " << this << std::endl;
 }
 
 Point::~Point()

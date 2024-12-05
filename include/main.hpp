@@ -11,4 +11,5 @@
   void nameSpace();
   void structure();
   void object();
+  void Method();
 #endif // !__UTILS__

@@ -24,5 +24,8 @@ int main()
     std::cout << "\nTring object" << std::endl;
     object();
 
+    std::cout << "\nTrying Method" << std::endl;
+    Method();
+
     return 0;
   }

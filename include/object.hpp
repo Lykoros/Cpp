@@ -1,8 +1,8 @@
 #ifndef __OBJECT__
   #define __OBJECT__
+  #include <string>
 
-  class Point
-  {
+  class Point {
     public:
       Point(); //if not def, will use default constructor
       /*Point(const Point& p) = delete; don't run it by default*/
@@ -13,6 +13,21 @@
       ~Point(); //Destructor
   
     private:
+  };
+
+//////////////////////////////////////////////////////////////////////////////////
+
+  class Window {
+    public: 
+      Window() = default; //Default constructor
+      Window(const std::string title);
+      Window(const std::string title, int width, int height);
+      void run() const noexcept;
+
+    private: 
+      std::string title;
+      int width;
+      int height;
   };
 
 #endif // !__OBJECT__
