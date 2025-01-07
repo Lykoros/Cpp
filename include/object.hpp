@@ -31,4 +31,3 @@
   };
 
 #endif // !__OBJECT__
-  #define __OBJECT__

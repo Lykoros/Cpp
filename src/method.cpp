@@ -4,7 +4,7 @@
 #include <string>
 
 Window::Window(const std::string t) : title(t) { //same as below
-  /*this->title = title*/
+  /*this->t = title*/
   std::cout << "Window : " << title << std::endl;
 }
 
